@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 //Inyeccion por dependecia del string de conexion de contexto
 builder.Services.AddDbContext<equiposContext>(options =>
         options.UseSqlServer(
-            builder.Configuration.GetConnectionString("equiposDbConnection ")
+            builder.Configuration.GetConnectionString("equiposDbConnection")
             )
         );
 
